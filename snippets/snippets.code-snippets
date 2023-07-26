@@ -271,10 +271,10 @@
   "PayloadCMS Collection": {
     "prefix": "!pc",
     "body": [
-      "import { CollectionConfig } from "payload/types";"
+      "import { CollectionConfig } from \"payload/types\";",
       "",
       "export const ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/} = {",
-      "    slug: '${TM_FILENAME_BASE}s',",
+      "    slug: '${TM_FILENAME_BASE/downcase}s',",
       "   labels: {",
       "      singular: '${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}',",
       "      plural: '${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}s',",
